@@ -1,0 +1,60 @@
+# ==================== Obsidian 专属忽略规则 ====================
+# 核心：忽略 Obsidian 本地配置目录（避免多设备/多人协作的配置冲突）
+.obsidian/
+# 忽略 Obsidian 本地缓存/临时配置
+.obsidian.local/
+# 忽略 Obsidian 自动生成的备份配置文件
+.obsidian/*.bak
+.obsidian/workspace.json.bak
+.obsidian/app.json.bak
+# 忽略 Obsidian 的插件缓存（非必要同步）
+.obsidian/plugins/*/node_modules/
+.obsidian/plugins/*/dist/
+
+# ==================== 跨系统通用忽略规则 ====================
+# Windows 系统自动生成的文件
+Thumbs.db
+Thumbs.db:encryptable
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.tmp
+*.bak
+*.log
+*.ini
+# Windows 快捷方式
+*.lnk
+
+# Mac 系统自动生成的文件
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Linux 系统自动生成的文件
+*.swp
+.*.sw?
+.swo
+~*
+# Linux 权限临时文件
+.fuse_hidden*
+# Linux 桌面配置
+.directory
+
+# ==================== 编辑器/工具忽略规则（可选） ====================
+# VS Code 配置（如果用 VS Code 编辑笔记）
+.vscode/
+.idea/  # IntelliJ/WebStorm 配置
+*.sublime-project
+*.sublime-workspace
